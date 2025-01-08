@@ -40,10 +40,10 @@ if uploaded_file:
         # Display Uploaded Image
         st.image(uploaded_file, caption="Uploaded Image", use_container_width=True)
         image_bytes = uploaded_file.read()
-        img = cv.imdecode(np.frombuffer(image_bytes, dtype=np.uint8), cv.IMREAD_COLOR)
+        img = cv2.imdecode(np.frombuffer(image_bytes, dtype=np.uint8), cv2.IMREAD_COLOR)
         
         # Preprocess Image
-        normalized_image = np.expand_dims(cv.resize(cv.cvtColor(img, cv.COLOR_BGR2RGB), (150, 150)), axis=0)
+        normalized_image = np.expand_dims(cv2.resize(cv2.cvtColor(img, cv2.COLOR_BGR2RGB), (150, 150)), axis=0)
 
         # Prediction
         with st.spinner("Analyzing... Please wait!"):
