@@ -4,6 +4,8 @@
 
 This project is a Deep Learning-based Leaf Disease Detection System that utilizes transfer learning to identify and classify diseases in plant leaves. The app leverages a pre-trained model to provide high-accuracy predictions for 33 different types of leaf diseases.
 
+![](https://raw.github.com/alphatechlogics/PlantLeafDiseaseDetection/0c31ae617bfc9c5eb47a9f32eefa5598a3253818/image.png)
+
 ## 📋 Features
 
 - **Image Upload**: Upload a clear image of a leaf.
